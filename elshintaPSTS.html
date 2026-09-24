@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Creativity Vestival</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 font-sans text-slate-800 antialiased min-h-screen">
+
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+
+    <header class="bg-indigo-600 text-white rounded-lg p-6 mb-8 text-center shadow-md">
+      <h1 class="text-2xl md:text-4xl font-bold mb-2">Student Creativity Vestival</h1>
+      <p class="text-indigo-100 text-sm md:text-base">
+        Showcase Your Creativity, Skills and Innovativ Ideas
+      </p>
+    </header>
+
+    <section class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-8">
+      <h2 class="text-xl font-bold mb-6 text-slate-700 border-b pb-2">Registration Form</h2>
+      
+      <form action="#" method="POST" class="space-y-4">
+        
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div>
+            <label for="nama" class="block text-sm font-medium mb-1">Student Name</label>
+            <input 
+              type="text" 
+              id="nama" 
+              name="nama" 
+              placeholder="Enter Your Full Name" 
+              class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" 
+              required
+            >
+          </div>
+
+          <div>
+            <label for="tim" class="block text-sm font-medium mb-1">Competition Category</label>
+            <input 
+              type="text" 
+              id="tim" 
+              name="tim" 
+              placeholder="Enter Your Competition" 
+              class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" 
+              required
+            >
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          
+          <div>
+            <label for="kategori" class="block text-sm font-medium mb-1">Class</label>
+            <select 
+              id="kategori" 
+              name="kategori" 
+              class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm bg-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+            >
+              <option value="">-- Enter Your Class --</option>
+              <option value="web">X</option>
+              <option value="uiux">XI</option>
+              <option value="game">XII</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="telepon" class="block text-sm font-medium mb-1">Contact Nomber</label>
+            <input 
+              type="tel" 
+              id="telepon" 
+              name="telepon" 
+              placeholder="08xxxx" 
+              class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" 
+              required
+            >
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <div>
+            <label class="block text-sm font-medium mb-2">Gender</label>
+            <div class="flex items-center space-x-4 text-sm">
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="gender" value="L" class="mr-2 text-indigo-600"> Male
+              </label>
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="gender" value="P" class="mr-2 text-indigo-600"> Female
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium mb-2">Participation Type</label>
+            <div class="flex items-center space-x-4 text-sm">
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="tipe" value="online" class="mr-2 text-indigo-600"> Individual
+              </label>
+              <label class="flex items-center cursor-pointer">
+                <input type="radio" name="tipe" value="offline" class="mr-2 text-indigo-600"> Team
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label for="deskripsi" class="block text-sm font-medium mb-1">Project Description</label>
+          <textarea 
+            id="deskripsi" 
+            name="deskripsi" 
+            rows="3" 
+            placeholder="Describe our project or competition entry" 
+            class="w-full border border-slate-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+          ></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button 
+            type="submit" 
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 px-4 rounded-md transition duration-200"
+          >
+            Registration Now
+          </button>
+        </div>
+
+      </form>
+    </section>
+
+    <section class="bg-white rounded-lg shadow-md p-6 md:p-8">
+      <h2 class="text-xl font-bold mb-4 text-slate-700 border-b pb-2">Daftar Pendaftar Terakhir</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse border border-slate-200">
+          <thead>
+            <tr class="bg-slate-100 text-slate-700 text-sm">
+              <th class="border border-slate-200 px-4 py-2 font-semibold">No</th>
+              <th class="border border-slate-200 px-4 py-2 font-semibold">Participant</th>
+              <th class="border border-slate-200 px-4 py-2 font-semibold">Class</th>
+              <th class="border border-slate-200 px-4 py-2 font-semibold">Category</th>
+              <th class="border border-slate-200 px-4 py-2 font-semibold">Team</th>
+              <th class="border border-slate-200 px-4 py-2 font-semibold">Status</th>
+            </tr>
+          </thead>
+          <body class="text-sm">
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 px-4 py-2">1</td>
+              <td class="border border-slate-200 px-4 py-2">Namira chandevi</td>
+              <td class="border border-slate-200 px-4 py-2">X</td>
+              <td class="border border-slate-200 px-4 py-2">Web Development</td>
+              <td class="border border-slate-200 px-4 py-2">Codex</td>
+              <td class="border border-slate-200 px-4 py-2 text-green-600 font-medium">Registered</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="border border-slate-200 px-4 py-2">2</td>
+              <td class="border border-slate-200 px-4 py-2">Gracia Tata</td>
+              <td class="border border-slate-200 px-4 py-2">X</td>
+              <td class="border border-slate-200 px-4 py-2">Iot Project</td>
+              <td class="border border-slate-200 px-4 py-2">SmartTech</td>
+              <td class="border border-slate-200 px-4 py-2 text-yellow-600 font-medium">Pending</td>
+            </tr>
+          </body>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
